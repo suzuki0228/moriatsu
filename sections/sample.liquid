@@ -1,0 +1,70 @@
+<!-- Schemaで定義しよう -->
+
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="image-with-text page-width">
+  <div class="image-with-text__grid  grid grid--gapless grid--1-col grid--2-col-tablet">
+    <div class="grid__item">
+      <div class="image-with-text__media">
+          <img
+            src="https://picsum.photos/500/300"  loading="lazy">
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="image-with-text__content">
+              <h2 class="image-with-text__heading h1" >
+               題名が入ります
+              </h2>
+              <div class="image-with-text__text rte" >テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+                <a href="#" class="button" aria-disabled="true">
+                  ボタンのラベルが入ります
+                </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "サンプルB・テキスト付き画像",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "画像l"
+    },
+        {
+      "type": "text",
+          "id": "heading",
+          "default": "題名が入ります",
+          "label": "題名"
+    },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>",
+          "label": "テキスト"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "ボタンのラベルが入ります",
+          "info": "ボタンのラベルのインフォメーション"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "URL"
+        }
+      ],
+  "presets": [
+    {
+      "name": "サンプルB・テキスト付き画像"
+    }
+  ]
+}
+{% endschema %}
