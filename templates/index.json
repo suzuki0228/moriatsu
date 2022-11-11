@@ -124,7 +124,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         }
       },
