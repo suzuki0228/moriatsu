@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "かっこいいメンズＴシャツならsdfddsfd",
+            "heading": "ｓｄさｄｓかっこいいメンズＴシャツならsdfddsfd",
             "heading_size": "h0"
           }
         },
@@ -36,7 +36,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/bearded-young-man.jpg",
         "image_overlay_opacity": 30,
         "image_height": "large",
         "adapt_height_first_image": false,
